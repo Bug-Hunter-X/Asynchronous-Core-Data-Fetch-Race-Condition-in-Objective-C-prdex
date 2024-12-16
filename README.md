@@ -1,0 +1,3 @@
+# Asynchronous Core Data Fetch Race Condition in Objective-C
+
+This repository demonstrates a common, yet subtle, bug in Objective-C applications that utilize Core Data and asynchronous operations. The issue arises from a race condition where a view controller might deallocate before an asynchronous Core Data fetch completes, leading to crashes when attempting to update the UI with fetched data.  The example highlights how to mitigate this race condition using proper object management and retain cycles.
